@@ -1,0 +1,771 @@
+/*
+ * ============================================================
+ * MEALS MODULE — DESIGN SYSTEM
+ * Color palette drawn directly from logo:
+ *   • Primary green  : #22c55e / #15803d (heart + leaf + fork)
+ *   • Light green    : #4ade80 (glow / accent)
+ *   • Amber/orange   : #f59e0b / #f97316 (fruit)
+ *   • Teal           : #14b8a6 (meditation glow)
+ *   • White/cream    : #f8fafc / #fefce8 (background)
+ *   • Near-black text: #0f172a
+ * ============================================================
+ */
+
+/* ── Google Fonts import — Nunito for organic, health-y warmth ── */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* ══════════════════════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════════════════════ */
+:root {
+  /* Logo green family */
+  --green-light:   #4ade80;
+  --green:         #22c55e;
+  --green-dark:    #15803d;
+  --green-deeper:  #14532d;
+
+  /* Logo amber / fruit orange */
+  --amber:         #f59e0b;
+  --amber-light:   #fef3c7;
+  --orange:        #f97316;
+
+  /* Logo teal (meditation glow) */
+  --teal:          #14b8a6;
+  --teal-light:    #f0fdfa;
+
+  /* Backgrounds — bright, airy */
+  --bg-page:       #f0fdf4;
+  --bg-card:       #ffffff;
+  --bg-food:       #f8fafc;
+  --bg-food-hover: #f0fdf4;
+
+  /* Text */
+  --text-main:     #0f172a;
+  --text-muted:    #64748b;
+  --text-sub:      #94a3b8;
+
+  /* Border */
+  --border:        #d1fae5;
+  --border-card:   #e2e8f0;
+
+  /* Radius */
+  --r-xl:  20px;
+  --r-lg:  16px;
+  --r-md:  12px;
+  --r-sm:   8px;
+  --r-pill: 999px;
+
+  /* Shadow */
+  --shadow-card:  0 4px 20px rgba(34,197,94,0.08), 0 1px 4px rgba(0,0,0,0.04);
+  --shadow-hover: 0 12px 40px rgba(34,197,94,0.18), 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-btn:   0 4px 16px rgba(34,197,94,0.35);
+
+  /* Motion */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast:  0.18s;
+  --t-mid:   0.28s;
+  --t-slow:  0.45s;
+
+  /* Fonts */
+  --font-display: 'Nunito', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ENTRANCE ANIMATION
+══════════════════════════════════════════════════════════ */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Loading dots pulse */
+@keyframes dotPulse {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.3; }
+  40%           { transform: scale(1.2); opacity: 1; }
+}
+
+/* Heart pulse for loading */
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  30%     { transform: scale(1.15); }
+  60%     { transform: scale(0.95); }
+}
+
+/* Spin for refresh icon hover */
+@keyframes spinOnce {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Progress bar shimmer — premium feel */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+/* Blob float */
+@keyframes blobFloat {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(20px, -20px) scale(1.04); }
+}
+
+/* Donut ring draw-in */
+@keyframes ringDraw {
+  from { stroke-dashoffset: 440; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   LOADING SCREEN
+══════════════════════════════════════════════════════════ */
+.loadingScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--bg-page);
+  font-family: var(--font-display);
+}
+
+/* Animated logo-heart */
+.loadingHeart {
+  animation: heartbeat 1.4s ease-in-out infinite;
+  filter: drop-shadow(0 6px 20px rgba(34,197,94,0.4));
+}
+
+.loadingText {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-dark);
+  letter-spacing: 0.2px;
+}
+
+/* Three bouncing dots */
+.loadingDots {
+  display: flex;
+  gap: 8px;
+}
+.loadingDots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: dotPulse 1.2s ease-in-out infinite;
+}
+.loadingDots span:nth-child(2) { animation-delay: 0.2s; background: var(--amber); }
+.loadingDots span:nth-child(3) { animation-delay: 0.4s; background: var(--teal); }
+
+/* ══════════════════════════════════════════════════════════
+   PAGE CONTAINER
+══════════════════════════════════════════════════════════ */
+.container {
+  position: relative;
+  padding: 32px 36px 60px;
+  min-height: 100vh;
+  /* Bright page gradient — greens from logo */
+  background: linear-gradient(145deg, #f0fdf4 0%, #fefce8 40%, #f0fdfa 100%);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* ── Background organic blob — faint, like logo's heart shape ── */
+.bgBlob {
+  position: absolute;
+  top: -80px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  pointer-events: none;
+  animation: blobFloat 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* ── Dot matrix pattern — echoes logo's dot ring ── */
+.dotPattern {
+  position: absolute;
+  bottom: 60px;
+  left: 24px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+/* ══════════════════════════════════════════════════════════
+   TOP BAR
+══════════════════════════════════════════════════════════ */
+.topBar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  animation: slideUp var(--t-slow) var(--ease-out) both;
+}
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo-echo heart badge with shadow */
+.heartBadge {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: white;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 16px rgba(34,197,94,0.2);
+  border: 1.5px solid var(--border);
+  flex-shrink: 0;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+/* Date tag with sparkle */
+.dateTag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+
+/* ── Refresh All button — logo-green gradient ── */
+.refreshAll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--font-body);
+  letter-spacing: 0.2px;
+  transition: transform var(--t-fast) var(--ease-spring),
+              box-shadow var(--t-fast) ease;
+  box-shadow: var(--shadow-btn);
+}
+.refreshAll:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(34,197,94,0.45);
+}
+.refreshAll:hover svg { animation: spinOnce 0.5s ease; }
+.refreshAll:active { transform: scale(0.97); }
+
+/* ══════════════════════════════════════════════════════════
+   MAIN GRID
+══════════════════════════════════════════════════════════ */
+.mainGrid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.mealsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ══════════════════════════════════════════════════════════
+   MEAL CARDS
+══════════════════════════════════════════════════════════ */
+.mealCard {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: var(--r-xl);
+  padding: 26px 24px 22px;
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-card);
+  /* Entrance animation — staggered via inline style */
+  animation: slideUp var(--t-slow) var(--ease-out) both;
+  transition: transform var(--t-mid) var(--ease-spring),
+              box-shadow var(--t-mid) ease;
+  overflow: hidden;
+}
+.mealCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border);
+}
+
+/* Top accent strip — logo-green gradient bar */
+.mealCardAccent {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-light), var(--green), var(--teal));
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+}
+
+.mealHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mealTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Meal icon container */
+.mealIconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: #f0fdf4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealHeader h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text-main);
+  text-transform: capitalize;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+/* Per-meal refresh — ghost style */
+.refreshBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-food);
+  border: 1.5px solid var(--border-card);
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  transition: background var(--t-fast) ease,
+              color var(--t-fast) ease,
+              transform var(--t-fast) var(--ease-spring);
+}
+.refreshBtn:hover {
+  background: var(--border);
+  color: var(--green-dark);
+  transform: translateY(-1px);
+}
+.refreshBtn:hover svg { animation: spinOnce 0.45s ease; }
+
+/* ══════════════════════════════════════════════════════════
+   FOOD ITEMS
+══════════════════════════════════════════════════════════ */
+.foodList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.foodItem {
+  background: var(--bg-food);
+  padding: 16px 18px;
+  border-radius: var(--r-lg);
+  border: 1.5px solid transparent;
+  /* Entrance — slightly later delay */
+  animation: slideUp var(--t-slow) var(--ease-out) both;
+  transition: background var(--t-fast) ease,
+              border-color var(--t-fast) ease,
+              transform var(--t-fast) var(--ease-spring),
+              box-shadow var(--t-fast) ease;
+}
+.foodItem:hover {
+  background: var(--bg-food-hover);
+  border-color: var(--border);
+  transform: translateX(4px);
+  box-shadow: 0 2px 12px rgba(34,197,94,0.08);
+}
+
+.foodTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.foodNameRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.foodName {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: var(--font-display);
+}
+
+/* Calorie pill — amber from logo fruit */
+.caloriePill {
+  font-size: 12px;
+  font-weight: 700;
+  color: #92400e;
+  background: var(--amber-light);
+  border: 1px solid #fde68a;
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  white-space: nowrap;
+  letter-spacing: 0.1px;
+}
+
+.ingredients {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+.ingredients svg { flex-shrink: 0; margin-top: 1px; }
+
+/* ── Log button — logo-green primary ── */
+.logBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, var(--green-light), var(--green-dark));
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: var(--font-body);
+  letter-spacing: 0.2px;
+  transition: transform var(--t-fast) var(--ease-spring),
+              box-shadow var(--t-fast) ease;
+  box-shadow: 0 3px 12px rgba(34,197,94,0.3);
+}
+.logBtn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(34,197,94,0.4);
+}
+.logBtn:active { transform: scale(0.97); }
+
+/* ── Logged state — muted, checkmark ── */
+.loggedBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #dcfce7;
+  color: var(--green-dark);
+  border: 1.5px solid #bbf7d0;
+  padding: 8px 18px;
+  border-radius: var(--r-pill);
+  cursor: not-allowed;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: var(--font-body);
+  /* Logged state uses teal-ish green check icon override */
+}
+.loggedBtn svg path { stroke: var(--green-dark); }
+
+/* Leaf icon inline */
+.leafIcon { display: inline-block; }
+.forkIcon { display: inline-block; }
+
+/* ══════════════════════════════════════════════════════════
+   SUMMARY CARD (sticky right panel)
+══════════════════════════════════════════════════════════ */
+.summaryCard {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: var(--r-xl);
+  padding: 28px 26px 24px;
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--border-card);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+  overflow: hidden;
+  animation: slideUp var(--t-slow) var(--ease-out) 0.2s both;
+}
+
+/* Decorative dot ring — top right, echoes logo ring */
+.summaryDots {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: 0.9;
+}
+
+/* Summary top accent strip */
+.summaryCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--amber), var(--green), var(--teal));
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+}
+
+.summaryTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 900;
+  color: var(--text-main);
+  letter-spacing: -0.3px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   DONUT CHART
+══════════════════════════════════════════════════════════ */
+.circleWrapper {
+  position: relative;
+  width: 170px;
+  margin: 0 auto 28px auto;
+}
+
+.donutSvg {
+  display: block;
+}
+
+/* Track ring — soft green tint */
+.circleBg {
+  fill: none;
+  stroke: #d1fae5;
+  stroke-width: 14;
+}
+
+/* Progress ring — logo-green gradient + animated draw */
+.circleProgress {
+  fill: none;
+  stroke: url(#ringGrad);
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.9s var(--ease-out);
+  /* Initial draw animation */
+  animation: ringDraw 1.2s var(--ease-out) both;
+}
+
+/* Text overlay on donut */
+.circleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 120px;
+}
+.circleText h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.circleSubLabel {
+  font-size: 11px;
+  color: var(--text-sub);
+  margin: 3px 0 1px;
+  font-weight: 600;
+}
+
+.circleGoalLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Percentage badge — amber from logo fruit */
+.percentBadge {
+  display: inline-block;
+  margin-top: 6px;
+  background: linear-gradient(135deg, var(--amber), var(--orange));
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: var(--r-pill);
+  letter-spacing: 0.3px;
+  font-family: var(--font-display);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MACRO BARS
+══════════════════════════════════════════════════════════ */
+.macrosSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+
+.macroLabelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+/* Icon + name group */
+.macroNameGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 6px;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+}
+
+.macroName {
+  font-size: 13px;
+  font-weight: 800;
+  font-family: var(--font-display);
+}
+
+.macroValues {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.macroSep {
+  margin: 0 4px;
+  color: var(--text-sub);
+}
+
+/* Progress bar track */
+.progressBar {
+  position: relative;
+  background: #f1f5f9;
+  height: 10px;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+/* Fill — color set inline per macro */
+.progressFill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  transition: width 0.8s var(--ease-out);
+  position: relative;
+}
+
+/* Shimmer overlay on progress bar */
+.progressShimmer {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  animation: shimmer 2.2s ease infinite;
+  pointer-events: none;
+}
+
+/* Percentage label right of bar */
+.macroPercent {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  text-align: right;
+  margin-top: 3px;
+  font-family: var(--font-display);
+  opacity: 0.85;
+}
+
+/* ── Goal chip — bottom of summary ── */
+.goalChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0fdf4;
+  border: 1.5px solid #bbf7d0;
+  border-radius: var(--r-pill);
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green-dark);
+  font-family: var(--font-display);
+}
+
+/* ══════════════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .container { padding: 24px 20px 48px; }
+}
+
+@media (max-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .summaryCard {
+    position: static;
+  }
+  .pageTitle { font-size: 22px; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 16px 14px 40px; }
+  .topBar { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .refreshAll { align-self: flex-start; }
+  .mealCard { padding: 20px 16px 16px; }
+  .foodTop { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   ACCESSIBILITY
+══════════════════════════════════════════════════════════ */
+button:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+  border-radius: var(--r-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

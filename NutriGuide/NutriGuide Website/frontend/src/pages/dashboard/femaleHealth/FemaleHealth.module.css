@@ -1,0 +1,1395 @@
+/* ═══════════════════════════════════════════════════════════
+   FEMALE HEALTH — COMPLETE CSS
+   Theme: Vibrant pink-to-purple gradient, soft feminine energy
+   Font: Nunito (imported via @import at top)
+   ═══════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+
+/* ─── CSS VARIABLES ──────────────────────────────────────── */
+:root {
+  --pink:       #ff6b9d;
+  --pink-light: #ffb3cf;
+  --pink-bg:    #fff0f7;
+  --purple:     #9575cd;
+  --purple-dark:#6a3db8;
+  --purple-bg:  #f5f0ff;
+  --teal:       #4fc3f7;
+  --amber:      #ffb74d;
+  --green:      #81c784;
+  --white:      #ffffff;
+  --bg:         #fdf6fb;
+  --card:       #ffffff;
+  --text:       #1a0a2e;
+  --text2:      #6b6b8d;
+  --border:     #f0e6f6;
+  --shadow:     0 8px 32px rgba(255, 107, 157, 0.12);
+  --shadow-lg:  0 16px 48px rgba(149, 117, 205, 0.18);
+}
+
+/* ─── LOADING ────────────────────────────────────────────── */
+.loadingScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  gap: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: var(--text2);
+}
+
+.loadingOrb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+/* ─── WRAPPER ────────────────────────────────────────────── */
+.wrapper {
+  position: relative;
+  padding: 20px 24px 60px;
+  background: var(--bg);
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── FLOATING ORBS (background decoration) ─────────────── */
+.orbsContainer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.18;
+}
+
+.orb1 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #ff6b9d, transparent);
+  top: -100px; left: -100px;
+  animation: orbFloat1 12s ease-in-out infinite;
+}
+
+.orb2 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, #ce93d8, transparent);
+  top: 200px; right: -80px;
+  animation: orbFloat2 15s ease-in-out infinite;
+}
+
+.orb3 {
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, #4fc3f7, transparent);
+  bottom: 300px; left: 10%;
+  animation: orbFloat3 18s ease-in-out infinite;
+}
+
+.orb4 {
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, #ffb74d, transparent);
+  bottom: 100px; right: 15%;
+  animation: orbFloat1 20s ease-in-out infinite reverse;
+}
+
+.orb5 {
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, #9575cd, transparent);
+  top: 50%; left: 40%;
+  animation: orbFloat2 25s ease-in-out infinite;
+}
+
+/* Everything above the orbs */
+.wrapper > *:not(.orbsContainer) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── TOP HERO CARD ──────────────────────────────────────── */
+.topCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #c0392b 0%, #e91e8c 30%, #9c27b0 60%, #673ab7 100%);
+  border-radius: 32px;
+  padding: 44px 48px;
+  color: white;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(233, 30, 140, 0.35);
+  animation: slideDown 0.6s ease-out;
+}
+
+/* Animated decorative rings */
+.ringDeco1, .ringDeco2, .ringDeco3 {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.ringDeco1 {
+  width: 300px; height: 300px;
+  top: -100px; right: -60px;
+  animation: spinRing 20s linear infinite;
+}
+
+.ringDeco2 {
+  width: 200px; height: 200px;
+  top: -40px; right: -20px;
+  animation: spinRing 14s linear infinite reverse;
+}
+
+.ringDeco3 {
+  width: 500px; height: 500px;
+  bottom: -200px; left: -100px;
+  border-color: rgba(255,255,255,0.06);
+  animation: spinRing 30s linear infinite;
+}
+
+.left { width: 55%; }
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0.85;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.statusDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+  animation: blink 2s ease-in-out infinite;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin: 0 0 4px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.days {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 6px 0 8px;
+}
+
+.daysNum {
+  font-size: 80px;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.daysSuffix {
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 0.8;
+  padding-bottom: 12px;
+}
+
+.sub {
+  opacity: 0.85;
+  font-size: 0.92rem;
+  margin: 0 0 16px;
+}
+
+.phasePillHero {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1.5px solid;
+  backdrop-filter: blur(8px);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.3) !important;
+  color: white !important;
+}
+
+.phasePillDay {
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBox {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 24px 28px;
+  border-radius: 24px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+  min-width: 140px;
+  transition: transform 0.3s ease;
+}
+
+.cardBox:hover { transform: scale(1.04); }
+
+.cardBoxIcon { font-size: 1.8rem; margin-bottom: 6px; }
+.cardBoxLabel { font-size: 0.78rem; opacity: 0.85; font-weight: 600; letter-spacing: 0.04em; }
+.cardBoxNum { font-size: 2.8rem; font-weight: 900; margin: 4px 0; font-family: 'Playfair Display', serif; }
+.cardBoxSub { font-size: 0.78rem; opacity: 0.75; }
+
+.fullProgress { width: 100%; margin-top: 32px; }
+
+.progressTop {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.progressPct { font-weight: 800; font-size: 1rem; }
+
+.progressTrack {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  position: relative;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progressGlow {
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 12px rgba(255,255,255,0.9);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.progressLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  margin-top: 8px;
+  opacity: 0.7;
+}
+
+/* ─── PHASE BANNER ───────────────────────────────────────── */
+.phaseBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-radius: 20px;
+  border: 1.5px solid;
+  margin: 18px 0;
+  flex-wrap: wrap;
+  gap: 14px;
+  animation: fadeIn 0.5s ease-out 0.2s both;
+}
+
+.phaseLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.phaseEmojiWrap {
+  width: 52px; height: 52px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.phaseEmoji { font-size: 1.8rem; }
+
+.phaseTag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.55;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.phaseTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 2px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.phaseSigns {
+  font-size: 0.78rem;
+  color: var(--text2);
+  margin: 0;
+}
+
+.phaseStats { display: flex; gap: 24px; }
+
+.phaseStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.phaseStatLabel {
+  font-size: 0.7rem;
+  color: var(--text2);
+  font-weight: 600;
+}
+
+.phaseStatValue {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+/* ─── LOG PERIOD ─────────────────────────────────────────── */
+.logPeriodRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 12px 0 8px;
+}
+
+.logPeriodBtn {
+  background: linear-gradient(135deg, #ff6b9d22, #c6282822);
+  color: #c62828;
+  border: 1.5px solid #ff6b9d;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.logPeriodBtn:hover {
+  background: linear-gradient(135deg, #ff6b9d, #c62828);
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(255, 107, 157, 0.35);
+}
+
+.logPeriodHint {
+  font-size: 0.78rem;
+  color: var(--text2);
+  margin: 0;
+  padding-left: 4px;
+}
+
+.confirmBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff0f5;
+  border: 1.5px solid #ff6b9d;
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text);
+  animation: slideDown 0.3s ease-out;
+}
+
+.confirmBtn {
+  background: linear-gradient(135deg, #ff6b9d, #e91e8c);
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.confirmBtn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(255, 107, 157, 0.4);
+}
+
+/* ─── MAIN GRID ──────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ─── CARD BASE ──────────────────────────────────────────── */
+.card {
+  background: var(--card);
+  padding: 26px;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(149, 117, 205, 0.1);
+  border: 1px solid var(--border);
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ─── CALENDAR ───────────────────────────────────────────── */
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.calendarHeader h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
+}
+
+.calendarHeader button {
+  width: 34px; height: 34px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.calendarHeader button:hover {
+  background: var(--purple-bg);
+  border-color: var(--purple);
+  transform: scale(1.08);
+}
+
+.daysRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text2);
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+/* Phase colors */
+.menstrual  { background: #ffe0ec; color: #e91e8c; border: 1.5px solid #ffb3cf; }
+.follicular { background: #e0f7fa; color: #0288d1; border: 1.5px solid #b3e5fc; }
+.ovulation  { background: #fff8e1; color: #f57c00; border: 1.5px solid #ffe082; }
+.luteal     { background: #ede7f6; color: #7b1fa2; border: 1.5px solid #ce93d8; }
+
+/* Legend dots (separate from calendar cells) */
+.dot_menstrual  { background: #e91e8c; }
+.dot_follicular { background: #0288d1; }
+.dot_ovulation  { background: #f57c00; }
+.dot_luteal     { background: #7b1fa2; }
+
+.today {
+  box-shadow: 0 0 0 2.5px #fff, 0 0 0 4px var(--pink);
+  font-weight: 900;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.todayDot {
+  position: absolute;
+  bottom: 3px; left: 50%;
+  transform: translateX(-50%);
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.selectedDay {
+  box-shadow: 0 0 0 2.5px var(--pink), 0 0 14px 4px rgba(255,107,157,0.4);
+  font-weight: 900;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.selectedDot {
+  position: absolute;
+  bottom: 3px; left: 50%;
+  transform: translateX(-50%);
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--pink);
+}
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.clickable:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(255,107,157,0.35);
+}
+
+.legend {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  color: var(--text2);
+  font-weight: 600;
+}
+
+.legendDot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ─── MINI STAT CARDS ────────────────────────────────────── */
+.miniStats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.miniStatCard {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 2px 10px rgba(149,117,205,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.miniStatCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(255, 107, 157, 0.14);
+}
+
+.miniStatIcon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.miniStatLabel {
+  font-size: 0.7rem;
+  color: var(--text2);
+  margin: 0 0 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.miniStatValue {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 0;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+}
+
+.miniStatUnit {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text2);
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ─── DAILY LOG ──────────────────────────────────────────── */
+.dailyLogTitle {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 0 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.logLabel {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.logLabelSub {
+  font-weight: 500;
+  color: var(--text2);
+  font-size: 0.8rem;
+}
+
+.logSection {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+}
+
+.logDivider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #f0c6e4, transparent);
+  margin: 18px 0;
+}
+
+/* MOODS */
+.moods {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.moodBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 8px;
+  border-radius: 14px;
+  border: 1.5px solid var(--border);
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 58px;
+  flex: 1;
+  font-family: 'Nunito', sans-serif;
+}
+
+.moodBtn:hover {
+  border-color: var(--pink);
+  background: #fff0f7;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
+}
+
+.activeMood {
+  border-color: var(--pink) !important;
+  background: #fff0f7 !important;
+  box-shadow: 0 4px 14px rgba(255, 107, 157, 0.25) !important;
+}
+
+.moodEmoji { font-size: 1.6rem; line-height: 1; }
+.moodLabel { font-size: 0.68rem; font-weight: 700; color: var(--text2); }
+
+/* FLOW */
+.flowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flowValue {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--pink);
+}
+
+.flowSlider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 7px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #ff6b9d 0%,
+    #ff6b9d calc((var(--val, 3) - 1) * 25%),
+    #f5e6f0 calc((var(--val, 3) - 1) * 25%),
+    #f5e6f0 100%
+  );
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.flowSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--pink);
+  box-shadow: 0 2px 10px rgba(255, 107, 157, 0.5);
+  cursor: pointer;
+  border: 3px solid #fff;
+  transition: transform 0.15s;
+}
+
+.flowSlider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+.flowSlider::-moz-range-thumb {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--pink);
+  box-shadow: 0 2px 10px rgba(255, 107, 157, 0.5);
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+
+.flowTicks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+  margin-bottom: 14px;
+  font-size: 0.72rem;
+  color: var(--text2);
+  font-weight: 600;
+}
+
+/* SYMPTOMS */
+.symptoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.symptomChip {
+  padding: 7px 14px;
+  border-radius: 30px;
+  border: 1.5px solid #f0e0f0;
+  background: #fafafa;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+
+.symptomChip:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+  background: #fff0f7;
+}
+
+.activeSymptom {
+  background: #fff0f7 !important;
+  border-color: var(--pink) !important;
+  color: #c2185b !important;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 107, 157, 0.2);
+}
+
+/* NOTES */
+.notesArea {
+  width: 100%;
+  min-height: 76px;
+  border-radius: 14px;
+  border: 1.5px solid #f0e0f0;
+  background: #fafafa;
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  color: var(--text);
+  resize: vertical;
+  outline: none;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  font-family: 'Nunito', sans-serif;
+}
+
+.notesArea:focus { border-color: var(--pink); background: #fff0f7; }
+
+/* SAVE BUTTONS */
+.saveBtn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  margin-top: 8px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.saveMoodBtn {
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  color: var(--purple-dark);
+  border: 1.5px solid var(--purple);
+}
+.saveMoodBtn:hover {
+  background: linear-gradient(135deg, var(--purple), #7b1fa2);
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(149, 117, 205, 0.4);
+}
+
+.saveFlowBtn {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #c2185b;
+  border: 1.5px solid #f48fb1;
+}
+.saveFlowBtn:hover {
+  background: linear-gradient(135deg, var(--pink), #c2185b);
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(255, 107, 157, 0.4);
+}
+
+.saveSymptomsBtn {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  color: #2e7d32;
+  border: 1.5px solid #a5d6a7;
+}
+.saveSymptomsBtn:hover {
+  background: linear-gradient(135deg, #66bb6a, #2e7d32);
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(129, 199, 132, 0.4);
+}
+
+/* ─── SECTION HEADERS ────────────────────────────────────── */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sectionLine {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, #ff6b9d44, transparent);
+  border-radius: 2px;
+  min-width: 40px;
+}
+
+.recoIcon { font-size: 1.2rem; }
+
+/* ─── ANALYTICS SECTION ──────────────────────────────────── */
+.analyticsSection { margin-top: 36px; }
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.chartCard {
+  background: var(--card);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(149, 117, 205, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chartCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(255, 107, 157, 0.14);
+}
+
+.chartTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.noData {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c9b8d4;
+  font-size: 0.85rem;
+  gap: 10px;
+}
+
+.noDataEmoji { font-size: 2.5rem; }
+
+/* ─── RECOMMENDATIONS ────────────────────────────────────── */
+.recoSection { margin-top: 36px; }
+
+.recoBadge {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.recoCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.recoCard {
+  background: var(--card);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  padding: 22px 20px;
+  box-shadow: 0 4px 16px rgba(149, 117, 205, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.recoCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--reco-color, #ff6b9d);
+  border-radius: 22px 22px 0 0;
+  opacity: 0.7;
+}
+
+.recoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(149, 117, 205, 0.18);
+}
+
+.recoCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.recoCardIcon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.recoCardTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.recoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.recoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text2);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.recoDot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+/* ─── PHASES SECTION ─────────────────────────────────────── */
+.phasesSection { margin-top: 36px; padding-bottom: 20px; }
+
+.phaseCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.phaseCard {
+  background: var(--card);
+  border-radius: 22px;
+  border: 1.5px solid var(--border);
+  padding: 20px 16px;
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 14px rgba(149, 117, 205, 0.07);
+}
+
+.phaseCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--phase-color, #ff6b9d) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  border-radius: 20px;
+}
+
+.phaseCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(149, 117, 205, 0.2);
+  border-color: var(--phase-color, #ff6b9d);
+}
+
+.phaseCard:hover::after { opacity: 0.07; }
+
+.phaseCardActive {
+  border-color: var(--phase-color, #ff6b9d) !important;
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--phase-color, #ff6b9d) 30%, transparent) !important;
+}
+
+.phaseCardCurrentRibbon {
+  position: absolute;
+  top: 10px; right: -20px;
+  background: linear-gradient(135deg, var(--phase-color, #ff6b9d), #9c27b0);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 3px 28px 3px 12px;
+  transform: rotate(0deg);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 4px 0 0 4px;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.phaseCardNum {
+  width: 32px; height: 32px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.phaseCardBody { position: relative; z-index: 1; }
+
+.phaseCardUterus {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  display: block;
+  animation: floatEmoji 4s ease-in-out infinite;
+}
+
+.phaseCardLabel {
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0 0 4px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.phaseCardDays {
+  font-size: 0.72rem;
+  color: var(--text2);
+  margin: 0;
+  font-weight: 600;
+}
+
+.phaseCardHover {
+  font-size: 0.7rem;
+  color: var(--text2);
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-weight: 600;
+}
+
+.phaseCard:hover .phaseCardHover { opacity: 0.8; }
+
+/* ─── POPUP ──────────────────────────────────────────────── */
+.popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 10, 46, 0.55);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 80px rgba(26, 10, 46, 0.28);
+  animation: popupIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.popupClose {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #e0e0e0;
+  background: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  z-index: 10;
+  transition: all 0.2s;
+  font-family: 'Nunito', sans-serif;
+}
+.popupClose:hover { background: #f5f5f5; color: #333; transform: scale(1.1); }
+
+.popupHeader {
+  padding: 40px 28px 24px;
+  text-align: center;
+  border-radius: 28px 28px 0 0;
+}
+
+.popupUterus {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+  display: block;
+  animation: floatEmoji 3s ease-in-out infinite;
+}
+
+.popupTitle {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--text);
+  margin: 0 0 6px;
+  font-family: 'Playfair Display', serif;
+}
+
+.popupCurrentBadge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+.popupDays {
+  font-size: 0.82rem;
+  color: var(--text2);
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+
+.popupBody { padding: 8px 24px 28px; }
+
+.popupSection {
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  border: 1px solid #f0f0f0;
+}
+
+.popupSectionTitle {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 8px;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.popupSectionText {
+  font-size: 0.83rem;
+  color: var(--text2);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.fertBadge {
+  color: #fff;
+  font-size: 0.68rem;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ─── KEYFRAME ANIMATIONS ────────────────────────────────── */
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-40px, 30px) rotate(15deg); }
+}
+
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(0, 0); }
+  40% { transform: translate(25px, -30px); }
+  80% { transform: translate(-15px, 15px); }
+}
+
+@keyframes spinRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.92); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(255,255,255,0.8); }
+  50% { opacity: 0.5; box-shadow: 0 0 4px rgba(255,255,255,0.3); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popupIn {
+  from { opacity: 0; transform: scale(0.88) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.75; }
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .phaseCards { grid-template-columns: repeat(2, 1fr); }
+  .recoCards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .wrapper { padding: 14px 14px 50px; }
+  .grid { grid-template-columns: 1fr; }
+  .chartsRow { grid-template-columns: 1fr; }
+  .phaseCards { grid-template-columns: repeat(2, 1fr); }
+  .recoCards { grid-template-columns: 1fr; }
+  .topCard { padding: 28px 24px; }
+  .left { width: 100%; }
+  .daysNum { font-size: 56px; }
+  .miniStats { flex-direction: row; flex-wrap: wrap; }
+  .miniStatCard { flex: 1; min-width: 140px; }
+}

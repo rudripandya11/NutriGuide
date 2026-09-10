@@ -1,0 +1,321 @@
+food_id,name,meal_type,calories,protein,carbs,fats,vegetarian,vegan,eggetarian,non_veg,contains_dairy,contains_gluten,contains_nuts,contains_soy,contains_eggs,contains_seafood,diabetes_friendly,bp_friendly,thyroid_friendly,pcos_friendly,heart_friendly,cholesterol_friendly,anemia_friendly,arthritis_friendly,weight_loss_friendly,muscle_gain_friendly,maintenance_friendly,weight_gain_friendly,healthy_lifestyle_friendly,budget_level,ingredients
+1,Oats Vegetable Upma,breakfast,220,7,38,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Oats|Onion|Carrot|Beans|Peas|Green Chilli|Mustard Seeds|Curry Leaves|Salt|Oil
+2,Moong Dal Chilla,breakfast,200,12,30,3,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Moong Dal|Onion|Green Chilli|Coriander|Salt|Turmeric|Oil
+3,Vegetable Poha,breakfast,240,6,44,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Poha|Onion|Peanuts|Mustard Seeds|Curry Leaves|Turmeric|Green Chilli|Salt|Oil
+4,Ragi Porridge,breakfast,190,6,35,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Ragi Flour|Milk or Water|Cardamom|Salt
+5,Vegetable Dalia,breakfast,230,8,42,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Broken Wheat|Onion|Carrot|Beans|Peas|Green Chilli|Salt|Oil
+6,Sprouted Moong Salad,breakfast,170,11,26,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Sprouted Moong|Onion|Tomato|Cucumber|Lemon|Salt|Coriander
+7,Vegetable Idli,breakfast,180,6,34,2,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Urad Dal|Carrot|Beans|Salt
+8,Oats Idli,breakfast,200,8,32,3,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Oats|Rice|Urad Dal|Carrot|Beans|Salt
+9,Vegetable Uttapam (Low Oil),breakfast,250,7,40,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice Batter|Onion|Tomato|Capsicum|Green Chilli|Salt|Oil
+10,Besan Chilla,breakfast,210,11,28,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Besan|Onion|Green Chilli|Coriander|Salt|Turmeric|Oil
+11,Vegetable Millet Upma,breakfast,220,7,36,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Millet Rava|Onion|Carrot|Beans|Peas|Green Chilli|Salt|Oil
+12,Boiled Eggs with Veg Salad,breakfast,200,14,8,10,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Eggs|Cucumber|Tomato|Carrot|Salt|Pepper
+13,Egg White Omelette,breakfast,180,16,4,6,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Egg Whites|Onion|Green Chilli|Salt|Pepper|Oil
+14,Vegetable Suji Upma (Low Oil),breakfast,240,7,42,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Suji|Onion|Carrot|Beans|Peas|Green Chilli|Salt|Oil
+15,Low Fat Paneer Bhurji,breakfast,230,16,8,12,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Paneer|Onion|Tomato|Green Chilli|Turmeric|Salt|Oil
+16,Vegetable Handvo,breakfast,220,8,34,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Green Chilli|Salt|Oil
+17,Methi Thepla (Low Oil),breakfast,260,7,38,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Methi Leaves|Green Chilli|Turmeric|Salt|Oil
+18,Vegetable Oats Cheela,breakfast,210,9,30,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Oats Flour|Onion|Carrot|Capsicum|Green Chilli|Salt|Oil
+19,Plain Paratha (No Oil) with Curd,breakfast,280,9,40,6,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Curd|Salt
+20,Vegetable Sevai Upma,breakfast,230,6,40,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Sevai|Onion|Carrot|Beans|Peas|Green Chilli|Salt|Oil
+21,2 Roti with Lauki Sabzi, lunch,340,10,55,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Bottle Gourd|Onion|Tomato|Green Chilli|Turmeric|Salt|Oil
+22,2 Roti with Tinda Sabzi, lunch,330,9,54,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Tinda|Onion|Tomato|Green Chilli|Turmeric|Salt|Oil
+23,2 Roti with Mix Veg Curry, lunch,360,11,58,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Potato|Carrot|Beans|Peas|Onion|Tomato|Salt|Oil
+24,Brown Rice with Dal Tadka (Low Oil), lunch,420,14,70,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Brown Rice|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+25,Vegetable Khichdi, lunch,390,12,65,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+26,Millet Khichdi, lunch,370,11,60,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Millets|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+27,Palak Dal with 2 Roti, lunch,400,16,58,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Spinach|Toor Dal|Onion|Tomato|Garlic|Salt|Oil
+28,Chana Masala with 1 Roti, lunch,420,17,60,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Chickpeas|Onion|Tomato|Garlic|Garam Masala|Salt|Oil
+29,Sprouts Curry with Roti, lunch,380,18,50,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Sprouted Moong|Onion|Tomato|Turmeric|Salt|Oil
+30,Vegetable Oats Khichdi, lunch,350,12,55,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Oats|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+31,Grilled Chicken with Salad, lunch,360,28,10,12,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Chicken|Lettuce|Cucumber|Tomato|Pepper|Salt
+32,Chicken Curry (Low Oil) with 1 Roti, lunch,420,25,40,12,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Chicken|Onion|Tomato|Garlic|Ginger|Spices|Salt|Oil
+33,Egg Curry with 1 Roti, lunch,410,22,38,14,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Eggs|Onion|Tomato|Garlic|Spices|Salt|Oil
+34,Paneer Bhurji with 1 Roti, lunch,430,20,35,18,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Paneer|Onion|Tomato|Green Chilli|Turmeric|Salt|Oil
+35,Tofu Vegetable Curry with Roti, lunch,390,18,45,10,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Tofu|Onion|Tomato|Capsicum|Spices|Salt|Oil
+36,Lauki Chana Dal with 2 Roti, lunch,380,15,55,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Bottle Gourd|Chana Dal|Onion|Tomato|Turmeric|Salt|Oil
+37,Tur Dal with Brown Rice, lunch,430,14,70,7,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Brown Rice|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+38,Vegetable Sambar with 2 Idli, lunch,350,12,60,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Urad Dal|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+39,Palak Tofu Curry with Roti, lunch,370,19,42,9,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Wheat Flour|Spinach|Tofu|Onion|Tomato|Garlic|Salt|Oil
+40,Methi Dal with 2 Roti, lunch,390,16,58,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Methi Leaves|Toor Dal|Onion|Tomato|Turmeric|Salt|Oil
+41,Moong Dal Khichdi,dinner,340,13,55,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Moong Dal|Turmeric|Salt|Ghee
+42,Bajra Vegetable Khichdi,dinner,330,11,52,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Bajra|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+43,Lauki Moong Dal with 1 Roti,dinner,300,14,42,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Bottle Gourd|Moong Dal|Onion|Tomato|Turmeric|Salt|Oil
+44,Tinda Chana Dal with 1 Roti,dinner,310,13,45,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Tinda|Chana Dal|Onion|Tomato|Turmeric|Salt|Oil
+45,Palak Dal with 1 Phulka,dinner,320,15,40,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Spinach|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+46,Vegetable Dalia,dinner,300,10,52,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Broken Wheat|Carrot|Beans|Peas|Onion|Green Chilli|Salt|Oil
+47,Lauki Tomato Sabzi with 1 Roti,dinner,280,8,42,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Bottle Gourd|Tomato|Onion|Turmeric|Salt|Oil
+48,Palak Moong Sabzi with 1 Roti,dinner,290,10,40,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Spinach|Moong Dal|Onion|Tomato|Turmeric|Salt|Oil
+49,Dudhi Chana Sabzi with 1 Roti,dinner,310,12,44,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Bottle Gourd|Chana Dal|Onion|Tomato|Turmeric|Salt|Oil
+50,Masoor Dal with 1 Phulka,dinner,330,16,45,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Masoor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+51,Vegetable Moong Dal Soup with 1 Roti,dinner,300,14,38,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Moong Dal|Carrot|Beans|Tomato|Turmeric|Salt|Oil
+52,Methi Moong Dal,dinner,240,13,30,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Moong Dal|Methi Leaves|Onion|Tomato|Turmeric|Salt|Oil
+53,Vegetable Handvo,dinner,280,9,38,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Green Chilli|Salt|Oil
+54,Dudhi Muthiya,dinner,250,8,35,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Bottle Gourd|Gram Flour|Green Chilli|Turmeric|Salt|Oil
+55,Vegetable Oats Khichdi,dinner,310,12,48,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Oats|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+56,Palak Tomato Dal Soup with 1 Roti,dinner,290,13,36,4,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Spinach|Tomato|Toor Dal|Garlic|Turmeric|Salt|Oil
+57,Tur Dal with 1 Phulka,dinner,320,14,45,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Wheat Flour|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+58,Vegetable Bajra Rotla with Dudhi Sabzi,dinner,350,12,50,7,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Bajra Flour|Bottle Gourd|Onion|Tomato|Turmeric|Salt|Oil
+59,Moong Dal Chilla (Dinner Portion),dinner,280,14,36,5,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Moong Dal|Onion|Green Chilli|Coriander|Salt|Turmeric|Oil
+60,Vegetable Thin Khichdi,dinner,300,12,48,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+61,Roasted Chana, snack,120,6,18,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Chana|Salt
+62,Roasted Makhana, snack,100,4,16,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Makhana|Salt|Pepper
+63,Sprouts Chaat, snack,150,10,22,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Sprouted Moong|Onion|Tomato|Cucumber|Lemon|Salt|Coriander
+64,Cucumber Carrot Salad, snack,80,2,14,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Cucumber|Carrot|Lemon|Salt|Pepper
+65,Buttermilk (Low Salt), snack,90,4,10,2,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Curd|Water|Salt|Cumin Powder
+66,Green Moong Salad, snack,140,9,22,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Boiled Green Moong|Onion|Tomato|Lemon|Salt|Coriander
+67,Boiled Corn (No Butter), snack,150,5,30,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Sweet Corn|Salt|Pepper
+68,Apple Slices with Cinnamon, snack,90,1,22,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Apple|Cinnamon
+69,Guava Pieces, snack,80,2,14,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Guava|Salt
+70,Boiled Egg, snack,90,6,1,7,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Egg|Salt|Pepper
+71,Egg White Snack Bowl, snack,110,12,2,3,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Egg Whites|Onion|Pepper|Salt
+72,Low Fat Paneer Cubes, snack,150,12,3,9,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Low Fat Paneer|Salt|Pepper
+73,Roasted Peanuts (Small Portion), snack,180,7,6,15,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Peanuts|Salt
+74,Vegetable Soup, snack,90,4,12,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Carrot|Beans|Cabbage|Pepper|Salt
+75,Tomato Soup, snack,100,3,18,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Tomato|Garlic|Pepper|Salt
+76,Chana Sundal, snack,160,8,26,3,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Chickpeas|Mustard Seeds|Curry Leaves|Grated Coconut|Salt
+77,Moong Dal Cheela (Mini), snack,170,10,22,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Moong Dal|Onion|Green Chilli|Salt|Turmeric|Oil
+78,Vegetable Handvo Slice, snack,180,7,28,5,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Salt|Oil
+79,Roasted Soy Nuts, snack,170,14,12,6,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,medium,Soy Nuts|Salt
+80,Lemon Coconut Water, snack,70,1,16,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,low,Coconut Water|Lemon
+81,Paneer Moong Dal Cheela,breakfast,380,26,35,14,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Moong Dal|Paneer|Onion|Green Chilli|Salt|Turmeric|Oil
+82,Paneer Stuffed Oats Cheela,breakfast,390,25,32,15,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Oats Flour|Paneer|Onion|Green Chilli|Salt|Turmeric|Oil
+83,Soya Chunk Upma,breakfast,400,30,45,8,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Soya Chunks|Suji|Onion|Carrot|Beans|Peas|Salt|Oil
+84,High Protein Vegetable Dalia,breakfast,370,20,55,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Broken Wheat|Moong Dal|Carrot|Beans|Peas|Salt|Oil
+85,Sprouted Moong Breakfast Bowl,breakfast,350,21,45,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Sprouted Moong|Onion|Tomato|Cucumber|Lemon|Salt
+86,Moong Dal Cheela with Curd,breakfast,350,22,38,8,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Moong Dal|Curd|Onion|Green Chilli|Salt|Turmeric|Oil
+87,Besan Paneer Cheela,breakfast,390,26,30,16,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Besan|Paneer|Onion|Green Chilli|Salt|Turmeric|Oil
+88,Vegetable Soya Poha,breakfast,360,19,60,6,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Poha|Soya Chunks|Onion|Peanuts|Mustard Seeds|Turmeric|Salt|Oil
+89,Paneer Millet Upma,breakfast,410,24,50,14,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Millet Rava|Paneer|Onion|Carrot|Beans|Salt|Oil
+90,Peanut Butter Multigrain Toast,breakfast,390,18,40,18,1,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Multigrain Bread|Peanut Butter
+91,3 Boiled Eggs,breakfast,360,27,6,24,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Eggs|Salt|Pepper
+92,Egg White Vegetable Omelette,breakfast,320,28,10,10,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Egg Whites|Onion|Capsicum|Salt|Pepper|Oil
+93,Chicken Omelette,breakfast,410,34,6,22,0,0,0,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Eggs|Chicken|Onion|Salt|Pepper|Oil
+94,Grilled Chicken Breakfast Bowl,breakfast,420,35,12,18,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,high,Chicken|Lettuce|Cucumber|Tomato|Salt|Pepper
+95,Soya Paneer Protein Bowl,breakfast,420,32,18,20,1,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Soya Chunks|Paneer|Onion|Capsicum|Salt|Pepper|Oil
+96,Tofu Moong Dal Cheela,breakfast,370,26,35,12,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Moong Dal|Tofu|Onion|Green Chilli|Salt|Turmeric|Oil
+97,High Protein Ragi Porridge,breakfast,340,18,50,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Ragi Flour|Milk or Water|Almonds|Salt
+98,Paneer Oats Breakfast Bowl,breakfast,410,27,38,14,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Oats|Paneer|Milk|Dry Fruits|Salt
+99,Sprouted Soya Salad,breakfast,360,24,30,8,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Sprouted Soya|Onion|Tomato|Cucumber|Lemon|Salt
+100,High Protein Besan Cheela,breakfast,340,22,30,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Besan|Onion|Green Chilli|Salt|Turmeric|Oil
+101,Paneer Butter Masala with 2 Roti,lunch,620,32,55,30,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Paneer|Butter|Onion|Tomato|Cream|Spices|Salt
+102,Paneer Bhurji with 3 Phulka,lunch,580,34,48,28,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Paneer|Onion|Tomato|Green Chilli|Turmeric|Salt|Oil
+103,Soya Chunk Curry with 2 Roti,lunch,560,38,60,12,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Wheat Flour|Soya Chunks|Onion|Tomato|Garlic|Spices|Salt|Oil
+104,Chana Masala with Brown Rice,lunch,540,26,85,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Brown Rice|Chickpeas|Onion|Tomato|Garlic|Spices|Salt|Oil
+105,Rajma with Brown Rice,lunch,560,28,90,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Brown Rice|Rajma|Onion|Tomato|Garlic|Spices|Salt|Oil
+106,Palak Paneer with 2 Phulka,lunch,600,30,40,32,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Paneer|Spinach|Onion|Tomato|Garlic|Spices|Salt|Oil
+107,Tofu Curry with Multigrain Roti,lunch,520,32,50,18,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Multigrain Flour|Tofu|Onion|Tomato|Garlic|Spices|Salt|Oil
+108,Soya Paneer Curry with Roti,lunch,610,40,48,24,1,0,0,0,1,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Soya Chunks|Paneer|Onion|Tomato|Spices|Salt|Oil
+109,Moong Dal with 3 Phulka,lunch,520,26,70,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Wheat Flour|Moong Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+110,Masoor Dal with Brown Rice,lunch,540,27,80,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Brown Rice|Masoor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+111,Grilled Chicken with 2 Roti,lunch,600,42,45,20,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Chicken|Salt|Pepper|Oil
+112,Chicken Curry with Brown Rice,lunch,650,40,70,22,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Brown Rice|Chicken|Onion|Tomato|Garlic|Spices|Salt|Oil
+113,Chicken Keema with 2 Phulka,lunch,620,45,40,26,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Chicken Keema|Onion|Tomato|Garlic|Spices|Salt|Oil
+114,Egg Curry with 2 Roti,lunch,580,34,48,24,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Eggs|Onion|Tomato|Garlic|Spices|Salt|Oil
+115,Egg Bhurji with 3 Phulka,lunch,560,32,52,22,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Wheat Flour|Eggs|Onion|Tomato|Green Chilli|Salt|Oil
+116,Fish Curry with Brown Rice,lunch,620,38,60,24,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,high,Brown Rice|Fish|Onion|Tomato|Garlic|Spices|Salt|Oil
+117,Grilled Fish with Roti,lunch,580,42,30,20,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,high,Wheat Flour|Fish|Salt|Pepper|Oil
+118,Paneer Rajma Bowl,lunch,640,36,70,26,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Paneer|Rajma|Onion|Tomato|Garlic|Spices|Salt|Oil
+119,Soya Chana Protein Bowl,lunch,600,42,65,14,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Soya Chunks|Chickpeas|Onion|Tomato|Spices|Salt|Oil
+120,Chicken Dal Protein Combo,lunch,660,48,55,22,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Chicken|Moong Dal|Onion|Tomato|Garlic|Spices|Salt|Oil
+121,Kadhi with Paneer Moong Khichdi,dinner,540,30,70,16,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Curd|Besan|Paneer|Rice|Moong Dal|Turmeric|Salt|Ghee
+122,Kadhi with Soya Chunk Khichdi,dinner,560,36,72,14,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Besan|Soya Chunks|Rice|Moong Dal|Turmeric|Salt|Ghee
+123,Kadhi with Sprouted Moong Khichdi,dinner,520,28,68,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Besan|Sprouted Moong|Rice|Turmeric|Salt|Ghee
+124,Kadhi with Mixed Dal Khichdi,dinner,540,32,75,14,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Besan|Mixed Dal|Rice|Turmeric|Salt|Ghee
+125,Kadhi with Paneer Millet Khichdi,dinner,580,34,72,18,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Curd|Besan|Paneer|Millets|Moong Dal|Turmeric|Salt|Ghee
+126,Kadhi with Tofu Vegetable Khichdi,dinner,540,30,70,16,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Curd|Besan|Tofu|Rice|Moong Dal|Vegetables|Turmeric|Salt|Ghee
+127,Kadhi with Besan Sprout Rice,dinner,520,26,75,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Besan|Sprouted Dal|Rice|Turmeric|Salt|Ghee
+128,Kadhi with Paneer Brown Rice,dinner,600,32,80,18,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Curd|Besan|Paneer|Brown Rice|Turmeric|Salt|Ghee
+129,Sambar with Sprouted Moong Idli,dinner,520,28,78,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Rice|Urad Dal|Sprouted Moong|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+130,Sambar with Mixed Dal Idli,dinner,540,30,80,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Rice|Urad Dal|Mixed Dal|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+131,Sambar with Paneer Idli,dinner,600,34,75,18,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Rice|Urad Dal|Paneer|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+132,Sambar with Tofu Idli,dinner,560,30,78,14,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Rice|Urad Dal|Tofu|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+133,Sambar with Sprouted Millet Dosa,dinner,540,28,82,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Millets|Urad Dal|Sprouted Moong|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+134,Sambar with Paneer Dosa,dinner,620,36,80,20,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Rice|Urad Dal|Paneer|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+135,Sambar with Soya Dosa,dinner,580,38,78,16,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Rice|Urad Dal|Soya Chunks|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+136,Sambar with Sprouted Brown Rice,dinner,560,28,90,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Brown Rice|Sprouted Moong|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+137,Sambar with Paneer Brown Rice,dinner,620,34,88,20,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Brown Rice|Paneer|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+138,Sambar with Tofu Brown Rice,dinner,580,30,90,16,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Brown Rice|Tofu|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+139,Sambar with Mixed Dal Khichdi,dinner,560,32,75,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Rice|Mixed Dal|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+140,Kadhi with Sprouted Mixed Dal Rice,dinner,540,30,78,14,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Besan|Sprouted Mixed Dal|Rice|Turmeric|Salt|Ghee
+141,Roasted Soya Nuts,snack,220,18,12,10,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Soya Nuts|Salt
+142,Paneer Cubes with Black Pepper,snack,260,20,4,18,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Paneer|Black Pepper|Salt
+143,Greek Yogurt Bowl,snack,220,18,16,6,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Greek Yogurt|Fruits|Nuts|Honey
+144,Sprouted Moong Chaat,snack,200,14,28,3,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Sprouted Moong|Onion|Tomato|Lemon|Salt|Coriander
+145,Roasted Chana Peanut Mix,snack,240,16,22,10,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Roasted Chana|Peanuts|Salt|Spices
+146,Boiled Egg,snack,90,6,1,7,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Egg|Salt
+147,2 Boiled Eggs,snack,180,12,2,14,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Eggs|Salt
+148,Egg White Snack Bowl,snack,160,18,4,2,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Egg Whites|Onion|Pepper|Salt
+149,Paneer Sprout Salad,snack,260,22,16,12,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Paneer|Sprouted Moong|Cucumber|Tomato|Lemon|Salt
+150,Curd with Roasted Flax Seeds,snack,210,14,12,8,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Curd|Flax Seeds
+151,Soya Chunk Salad,snack,230,24,18,6,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Boiled Soya Chunks|Onion|Tomato|Lemon|Salt
+152,Roasted Peanut Chaat,snack,260,12,14,20,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Peanuts|Onion|Tomato|Lemon|Salt|Spices
+153,Chana Sundal,snack,220,12,34,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Chickpeas|Mustard Seeds|Curry Leaves|Grated Coconut|Salt
+154,Paneer Peanut Salad,snack,300,24,12,20,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Paneer|Peanuts|Cucumber|Tomato|Lemon|Salt
+155,Boiled Chana Salad,snack,200,14,30,3,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Boiled Chana|Onion|Tomato|Cucumber|Lemon|Salt
+156,Curd Paneer Bowl,snack,260,22,10,14,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Curd|Paneer|Salt|Pepper
+157,Soya Peanut Mix,snack,280,20,16,18,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Soya Chunks|Peanuts|Salt|Spices
+158,Paneer Flaxseed Bites,snack,240,18,8,16,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Paneer|Flax Seeds|Salt|Pepper
+159,Sprouted Mixed Dal Salad,snack,210,16,28,3,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,low,Sprouted Mixed Dal|Onion|Tomato|Cucumber|Lemon|Salt
+160,Tofu Cubes with Lemon,snack,200,18,6,12,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,medium,Tofu|Lemon|Salt|Pepper
+161,Paneer Stuffed Paratha with Curd,breakfast,620,26,60,28,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Paneer|Salt|Oil|Curd
+162,Vegetable Upma with Peanuts,breakfast,520,14,70,18,1,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Suji|Onion|Carrot|Beans|Peas|Peanuts|Mustard Seeds|Curry Leaves|Salt|Oil
+163,Poha with Peanuts and Sprouts,breakfast,540,16,80,14,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Poha|Peanuts|Sprouted Moong|Onion|Mustard Seeds|Turmeric|Salt|Oil
+164,Oats Porridge with Nuts and Milk,breakfast,580,20,72,20,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Oats|Milk|Almonds|Cashews|Salt
+165,Paneer Besan Cheela,breakfast,600,28,45,26,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Besan|Paneer|Onion|Green Chilli|Salt|Turmeric|Oil
+166,Vegetable Dalia with Nuts,breakfast,520,16,80,12,1,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Broken Wheat|Carrot|Beans|Peas|Nuts|Salt|Oil
+167,Peanut Butter Multigrain Toast with Milk,breakfast,650,22,70,30,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Multigrain Bread|Peanut Butter|Milk
+168,3 Egg Omelette with Multigrain Toast,breakfast,620,32,40,32,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Eggs|Onion|Salt|Pepper|Multigrain Bread|Oil
+169,Paneer Poha,breakfast,600,24,75,20,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Poha|Paneer|Onion|Peanuts|Turmeric|Salt|Oil
+170,Sprouted Moong with Roasted Peanuts,breakfast,520,20,60,18,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Sprouted Moong|Peanuts|Onion|Tomato|Lemon|Salt
+171,Vegetable Idli with Coconut Chutney,breakfast,560,16,82,18,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Rice|Urad Dal|Carrot|Beans|Salt|Coconut|Green Chilli
+172,Masala Oats with Paneer,breakfast,580,22,68,20,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Oats|Paneer|Onion|Tomato|Green Chilli|Salt|Oil
+173,Ragi Porridge with Almonds,breakfast,520,18,70,16,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Ragi Flour|Milk|Almonds|Salt
+174,Paneer Millet Upma,breakfast,600,26,72,20,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Millet Rava|Paneer|Onion|Carrot|Beans|Salt|Oil
+175,Chicken Omelette with Toast,breakfast,640,34,38,34,0,0,0,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Eggs|Chicken|Salt|Pepper|Bread|Oil
+176,Paneer Stuffed Dosa,breakfast,620,28,75,24,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Rice|Urad Dal|Paneer|Salt|Oil
+177,Oats Banana Milk Smoothie,breakfast,580,18,90,14,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Oats|Banana|Milk|Honey
+178,Soya Chunk Vegetable Upma,breakfast,600,30,70,16,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Soya Chunks|Suji|Onion|Carrot|Beans|Salt|Oil
+179,Peanut Jaggery Chikki with Milk,breakfast,650,18,85,28,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Peanuts|Jaggery|Milk
+180,Vegetable Paratha with Curd,breakfast,620,18,75,26,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Wheat Flour|Carrot|Beans|Peas|Salt|Oil|Curd
+181,Paneer Butter Masala with 3 Roti,lunch,820,34,80,40,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Paneer|Butter|Onion|Tomato|Cream|Spices|Salt
+182,Palak Paneer with Brown Rice,lunch,760,32,75,34,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Spinach|Paneer|Onion|Tomato|Garlic|Spices|Salt|Oil|Brown Rice
+183,Paneer Bhurji with 3 Phulka,lunch,780,36,60,42,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Paneer|Onion|Tomato|Green Chilli|Spices|Salt|Oil
+184,Chole with Brown Rice,lunch,720,24,110,14,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Brown Rice|Chickpeas|Onion|Tomato|Garlic|Spices|Salt|Oil
+185,Rajma with Jeera Rice,lunch,740,26,115,16,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Rice|Rajma|Cumin Seeds|Onion|Tomato|Garlic|Spices|Salt|Oil
+186,Moong Dal Tadka with 3 Roti,lunch,700,28,95,14,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Wheat Flour|Moong Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+187,Masoor Dal with Brown Rice,lunch,720,27,105,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Brown Rice|Masoor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+188,Soya Chunk Curry with 3 Roti,lunch,780,40,90,20,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Wheat Flour|Soya Chunks|Onion|Tomato|Garlic|Spices|Salt|Oil
+189,Tofu Vegetable Curry with Brown Rice,lunch,740,32,95,18,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Brown Rice|Tofu|Onion|Tomato|Capsicum|Spices|Salt|Oil
+190,Paneer Rajma Combo,lunch,820,38,95,32,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Paneer|Rajma|Onion|Tomato|Garlic|Spices|Salt|Oil
+191,Chicken Curry with Brown Rice,lunch,820,42,95,28,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Brown Rice|Chicken|Onion|Tomato|Garlic|Spices|Salt|Oil
+192,Chicken Keema with 3 Phulka,lunch,840,48,70,36,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Chicken Keema|Onion|Tomato|Garlic|Spices|Salt|Oil
+193,Grilled Chicken with Jeera Rice,lunch,780,45,85,24,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Rice|Chicken|Cumin Seeds|Salt|Pepper|Oil
+194,Egg Curry with Brown Rice,lunch,760,30,95,22,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Brown Rice|Eggs|Onion|Tomato|Garlic|Spices|Salt|Oil
+195,Egg Bhurji with 3 Phulka,lunch,720,32,70,28,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Eggs|Onion|Tomato|Green Chilli|Salt|Oil
+196,Fish Curry with Brown Rice,lunch,820,40,90,30,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,high,Brown Rice|Fish|Onion|Tomato|Garlic|Spices|Salt|Oil
+197,Grilled Fish with Millet Rice,lunch,780,42,85,24,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,high,Millet Rice|Fish|Salt|Pepper|Oil
+198,Soya Paneer Protein Bowl,lunch,840,45,85,30,1,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Soya Chunks|Paneer|Onion|Capsicum|Spices|Salt|Oil
+199,Paneer Chole Combo,lunch,860,40,110,28,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Paneer|Chickpeas|Onion|Tomato|Garlic|Spices|Salt|Oil
+200,Chicken Dal Protein Combo,lunch,880,50,95,26,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Chicken|Moong Dal|Onion|Tomato|Garlic|Spices|Salt|Oil
+201,Paneer Khichdi with Kadhi,dinner,650,28,85,22,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Rice|Moong Dal|Paneer|Curd|Besan|Turmeric|Salt|Ghee
+202,Moong Dal Khichdi with Ghee,dinner,600,22,80,18,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Rice|Moong Dal|Turmeric|Salt|Ghee
+203,Bajra Khichdi with Kadhi,dinner,620,24,82,20,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Bajra|Moong Dal|Curd|Besan|Turmeric|Salt|Ghee
+204,Vegetable Dal with 2 Roti,dinner,580,26,75,14,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Wheat Flour|Mixed Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+205,Masoor Dal with Brown Rice,dinner,620,25,90,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Brown Rice|Masoor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+206,Paneer Bhurji with 2 Phulka,dinner,680,30,60,30,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Paneer|Onion|Tomato|Green Chilli|Spices|Salt|Oil
+207,Tofu Vegetable Curry with Roti,dinner,600,28,70,16,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Tofu|Onion|Tomato|Capsicum|Spices|Salt|Oil
+208,Soya Chunk Khichdi,dinner,650,32,85,16,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Rice|Soya Chunks|Moong Dal|Turmeric|Salt|Oil
+209,Paneer Vegetable Dalia,dinner,620,26,78,18,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Broken Wheat|Paneer|Carrot|Beans|Peas|Salt|Oil
+210,Palak Dal with 2 Roti,dinner,580,24,70,14,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Wheat Flour|Spinach|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+211,Chicken Curry with 2 Phulka,dinner,700,34,55,30,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Chicken|Onion|Tomato|Garlic|Spices|Salt|Oil
+212,Grilled Chicken with Rice,dinner,680,38,70,20,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Rice|Chicken|Salt|Pepper|Oil
+213,Egg Curry with 2 Roti,dinner,620,28,60,22,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Wheat Flour|Eggs|Onion|Tomato|Garlic|Spices|Salt|Oil
+214,Egg Bhurji with Brown Rice,dinner,600,30,70,18,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Brown Rice|Eggs|Onion|Tomato|Green Chilli|Salt|Oil
+215,Fish Curry with Rice,dinner,720,36,80,28,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,high,Rice|Fish|Onion|Tomato|Garlic|Spices|Salt|Oil
+216,Grilled Fish with Millet Rice,dinner,680,40,75,20,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,high,Millet Rice|Fish|Salt|Pepper|Oil
+217,Sprouted Moong Khichdi,dinner,600,26,85,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Rice|Sprouted Moong|Turmeric|Salt|Oil
+218,Paneer Millet Khichdi,dinner,640,28,80,22,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Millets|Moong Dal|Paneer|Turmeric|Salt|Oil
+219,Vegetable Soya Dalia,dinner,620,30,82,14,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Broken Wheat|Soya Chunks|Carrot|Beans|Peas|Salt|Oil
+220,Dal Khichdi with Paneer Cubes,dinner,660,32,90,20,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Rice|Moong Dal|Paneer|Turmeric|Salt|Ghee
+221,Roasted Peanut Jaggery Mix,snack,420,14,40,24,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Peanuts|Jaggery
+222,Almond Milk Smoothie,snack,380,12,35,20,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Almond Milk|Banana|Honey
+223,Peanut Butter Banana Shake,snack,480,16,55,22,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Peanut Butter|Banana|Milk
+224,Paneer Cubes with Nuts,snack,420,22,10,30,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Paneer|Almonds|Cashews|Salt
+225,Curd with Honey and Nuts,snack,350,14,32,18,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Curd|Honey|Almonds|Cashews
+226,Dates and Almond Snack,snack,320,8,45,12,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Dates|Almonds
+227,Roasted Cashew Mix,snack,420,12,28,30,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Cashews|Salt
+228,Peanut Chikki with Milk,snack,460,16,55,22,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Peanut Chikki|Milk
+229,Banana Oats Smoothie,snack,400,14,60,12,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Banana|Oats|Milk|Honey
+230,Sprouted Moong with Peanuts,snack,340,18,40,12,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Sprouted Moong|Peanuts|Onion|Lemon|Salt
+231,Paneer Peanut Salad,snack,420,24,18,28,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Paneer|Peanuts|Cucumber|Tomato|Salt|Lemon
+232,Whole Wheat Toast with Peanut Butter,snack,380,14,38,20,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Whole Wheat Bread|Peanut Butter
+233,Boiled Chana with Coconut,snack,320,14,45,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Boiled Chana|Grated Coconut|Salt
+234,Milk with Dates,snack,350,12,48,10,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Milk|Dates
+235,Ragi Malt with Nuts,snack,380,14,60,10,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Ragi Flour|Milk|Almonds|Salt
+236,Paneer Stuffed Multigrain Sandwich,snack,420,22,40,20,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Multigrain Bread|Paneer|Onion|Salt|Butter
+237,Roasted Soy Nuts with Jaggery,snack,360,20,30,14,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Soy Nuts|Jaggery
+238,Curd Banana Bowl,snack,340,12,50,8,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,low,Curd|Banana|Honey
+239,Almond Peanut Trail Mix,snack,420,14,24,30,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Almonds|Peanuts|Cashews
+240,Paneer Date Bites,snack,380,20,35,18,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,medium,Paneer|Dates|Cardamom
+241,Vegetable Poha,breakfast,340,8,60,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Poha|Onion|Peanuts|Mustard Seeds|Curry Leaves|Turmeric|Salt|Oil
+242,Vegetable Upma,breakfast,360,10,55,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Suji|Onion|Carrot|Beans|Peas|Mustard Seeds|Curry Leaves|Salt|Oil
+243,Vegetable Dalia,breakfast,320,9,52,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Broken Wheat|Carrot|Beans|Peas|Onion|Salt|Oil
+244,Idli with Coconut Chutney,breakfast,380,12,65,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Urad Dal|Coconut|Green Chilli|Salt
+245,Oats Vegetable Upma,breakfast,340,12,50,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Oats|Onion|Carrot|Beans|Peas|Mustard Seeds|Salt|Oil
+246,Besan Cheela,breakfast,360,14,40,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Besan|Onion|Green Chilli|Salt|Turmeric|Oil
+247,Moong Dal Cheela,breakfast,340,16,42,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Moong Dal|Onion|Green Chilli|Salt|Turmeric|Oil
+248,Vegetable Uttapam,breakfast,380,12,60,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice Batter|Onion|Tomato|Capsicum|Green Chilli|Salt|Oil
+249,Vegetable Sevai Upma,breakfast,350,8,60,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Sevai|Onion|Carrot|Beans|Peas|Salt|Oil
+250,Sprouted Moong Salad,breakfast,300,15,38,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Sprouted Moong|Onion|Tomato|Cucumber|Lemon|Salt
+251,Boiled Eggs with Toast,breakfast,400,18,30,18,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Eggs|Bread|Salt|Pepper|Butter
+252,Paneer Sandwich,breakfast,420,18,45,16,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Bread|Paneer|Onion|Tomato|Salt|Butter
+253,Vegetable Paratha with Curd,breakfast,420,12,55,16,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Wheat Flour|Carrot|Beans|Peas|Salt|Oil|Curd
+254,Milk with Multigrain Toast,breakfast,360,14,48,10,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Milk|Multigrain Bread
+255,Ragi Porridge,breakfast,320,10,50,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Ragi Flour|Water|Salt
+256,Vegetable Millet Upma,breakfast,350,10,55,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Millet Rava|Onion|Carrot|Beans|Peas|Salt|Oil
+257,Oats Banana Porridge,breakfast,380,12,65,8,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Oats|Banana|Milk|Honey
+258,Curd with Fruits,breakfast,320,14,42,8,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Curd|Apple|Banana|Pomegranate
+259,Peanut Butter Toast,breakfast,420,14,40,20,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Bread|Peanut Butter
+260,Vegetable Handvo,breakfast,380,12,50,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Salt|Oil
+261,2 Roti with Mixed Vegetable Sabzi,lunch,520,14,70,14,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Wheat Flour|Potato|Carrot|Beans|Peas|Onion|Tomato|Salt|Oil
+262,2 Roti with Lauki Sabzi and Dal,lunch,540,18,75,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Wheat Flour|Bottle Gourd|Toor Dal|Onion|Tomato|Turmeric|Salt|Oil
+263,Brown Rice with Moong Dal,lunch,560,20,85,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Brown Rice|Moong Dal|Turmeric|Salt|Oil
+264,Vegetable Khichdi,lunch,520,16,80,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+265,Masoor Dal with 2 Phulka,lunch,550,22,75,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Wheat Flour|Masoor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+266,Palak Dal with Brown Rice,lunch,580,20,88,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Brown Rice|Spinach|Toor Dal|Onion|Tomato|Garlic|Turmeric|Salt|Oil
+267,Vegetable Millet Khichdi,lunch,540,16,82,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Millets|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+268,Paneer Vegetable Curry with 2 Roti,lunch,620,24,65,22,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Wheat Flour|Paneer|Onion|Tomato|Capsicum|Spices|Salt|Oil
+269,Tofu Vegetable Curry with Brown Rice,lunch,600,22,85,16,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Brown Rice|Tofu|Onion|Tomato|Capsicum|Spices|Salt|Oil
+270,Chana Masala with 2 Roti,lunch,620,20,95,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Wheat Flour|Chickpeas|Onion|Tomato|Garlic|Spices|Salt|Oil
+271,Rajma with Brown Rice,lunch,640,22,100,14,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Brown Rice|Rajma|Onion|Tomato|Garlic|Spices|Salt|Oil
+272,Vegetable Sambar with Rice,lunch,560,18,90,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+273,Curd Rice with Vegetable,lunch,580,16,90,12,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Curd|Carrot|Mustard Seeds|Curry Leaves|Salt
+274,Chicken Curry with 2 Roti,lunch,640,28,55,28,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Wheat Flour|Chicken|Onion|Tomato|Garlic|Spices|Salt|Oil
+275,Grilled Chicken with Brown Rice,lunch,600,32,80,16,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Brown Rice|Chicken|Salt|Pepper|Oil
+276,Egg Curry with 2 Roti,lunch,580,24,60,20,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Wheat Flour|Eggs|Onion|Tomato|Garlic|Spices|Salt|Oil
+277,Egg Bhurji with Brown Rice,lunch,560,22,75,16,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Brown Rice|Eggs|Onion|Tomato|Green Chilli|Salt|Oil
+278,Fish Curry with Rice,lunch,640,26,85,22,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,high,Rice|Fish|Onion|Tomato|Garlic|Spices|Salt|Oil
+279,Grilled Fish with Millet Rice,lunch,600,30,75,18,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,high,Millet Rice|Fish|Salt|Pepper|Oil
+280,Vegetable Dal Khichdi with Curd,lunch,580,20,90,12,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Moong Dal|Curd|Turmeric|Salt|Oil
+281,Vegetable Oats Khichdi,dinner,480,16,70,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Oats|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+282,Moong Dal Soup with 1 Phulka,dinner,420,18,50,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Moong Dal|Onion|Tomato|Garlic|Turmeric|Salt|Wheat Flour
+283,Vegetable Dalia Khichdi,dinner,460,14,75,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Broken Wheat|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+284,Palak Soup with Multigrain Roti,dinner,440,16,55,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Spinach|Onion|Garlic|Pepper|Salt|Multigrain Flour
+285,Vegetable Handvo,dinner,500,18,65,12,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Green Chilli|Salt|Oil
+286,Dudhi Muthiya,dinner,450,14,60,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Bottle Gourd|Gram Flour|Green Chilli|Turmeric|Salt|Oil
+287,Ragi Vegetable Upma,dinner,480,16,70,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Ragi Rava|Onion|Carrot|Beans|Peas|Salt|Oil
+288,Vegetable Idli with Sambar,dinner,500,18,80,6,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Urad Dal|Toor Dal|Vegetables|Tamarind|Sambar Powder|Salt
+289,Oats Vegetable Cheela,dinner,460,20,55,12,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Oats Flour|Onion|Carrot|Capsicum|Green Chilli|Salt|Oil
+290,Sprouted Moong Khichdi,dinner,480,20,70,8,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Sprouted Moong|Turmeric|Salt|Oil
+291,Paneer Vegetable Soup with Toast,dinner,520,22,40,18,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Paneer|Carrot|Beans|Pepper|Salt|Bread
+292,Tofu Vegetable Soup with Roti,dinner,500,20,50,14,1,1,0,0,0,1,0,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Tofu|Carrot|Beans|Pepper|Salt|Wheat Flour
+293,Vegetable Millet Khichdi,dinner,480,16,75,10,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Millets|Moong Dal|Carrot|Beans|Peas|Turmeric|Salt|Oil
+294,Chicken Clear Soup with 1 Roti,dinner,520,26,45,14,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Chicken|Garlic|Pepper|Salt|Wheat Flour
+295,Grilled Chicken Salad Bowl,dinner,500,30,20,20,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Chicken|Lettuce|Cucumber|Tomato|Pepper|Salt
+296,Egg Omelette with Multigrain Toast,dinner,520,26,40,18,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Eggs|Onion|Salt|Pepper|Multigrain Bread|Oil
+297,Egg White Vegetable Soup,dinner,460,24,30,12,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Egg Whites|Carrot|Beans|Pepper|Salt
+298,Fish Vegetable Soup with Roti,dinner,540,28,50,18,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,high,Fish|Carrot|Beans|Garlic|Pepper|Salt|Wheat Flour
+299,Grilled Fish Vegetable Bowl,dinner,520,30,35,18,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,high,Fish|Lettuce|Cucumber|Tomato|Pepper|Salt
+300,Vegetable Dal Soup with Toast,dinner,450,18,55,8,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Moong Dal|Onion|Tomato|Garlic|Pepper|Salt|Bread
+301,Roasted Chana,snack,180,8,28,2,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Chana|Salt
+302,Roasted Makhana,snack,160,6,24,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Makhana|Salt|Pepper
+303,Sprouted Moong Salad,snack,200,12,28,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Sprouted Moong|Onion|Tomato|Cucumber|Lemon|Salt
+304,Boiled Corn,snack,220,6,42,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Sweet Corn|Salt|Pepper
+305,Buttermilk,snack,120,6,12,4,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Curd|Water|Salt|Cumin Powder
+306,Curd with Fruits,snack,220,10,28,6,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Curd|Apple|Banana|Pomegranate
+307,Peanut Chaat,snack,240,10,18,14,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Peanuts|Onion|Tomato|Lemon|Salt|Spices
+308,Vegetable Sandwich,snack,260,10,40,8,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Bread|Cucumber|Tomato|Butter|Salt
+309,Paneer Toast,snack,280,12,28,12,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Bread|Paneer|Butter|Salt|Pepper
+310,Boiled Egg,snack,90,6,1,7,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Egg|Salt
+311,Egg Toast,snack,240,12,24,10,0,0,1,1,0,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Egg|Bread|Butter|Salt|Pepper
+312,Apple Slices,snack,120,1,28,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Apple
+313,Guava Pieces,snack,110,2,22,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Guava|Salt
+314,Banana,snack,150,2,36,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Banana
+315,Vegetable Soup,snack,140,6,18,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Carrot|Beans|Cabbage|Pepper|Salt
+316,Tomato Soup,snack,150,5,20,4,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Tomato|Garlic|Pepper|Salt
+317,Roasted Soy Nuts,snack,260,14,16,14,1,1,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,medium,Soy Nuts|Salt
+318,Chana Sundal,snack,220,10,32,6,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Chickpeas|Mustard Seeds|Curry Leaves|Grated Coconut|Salt
+319,Vegetable Handvo Slice,snack,260,8,40,10,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Rice|Urad Dal|Bottle Gourd|Carrot|Salt|Oil
+320,Lemon Coconut Water,snack,80,1,18,0,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,1,0,1,low,Coconut Water|Lemon

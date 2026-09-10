@@ -1,0 +1,832 @@
+/* ======================================================
+   DESIGN TOKENS — WELLNESS PALETTE
+   Primary: Leaf green / Sage / Warm cream
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --green-50:  #f0faf4;
+  --green-100: #d6f5e3;
+  --green-200: #a8e6c1;
+  --green-400: #4cbb7e;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #0f5e2e;
+
+  --sage-50:   #f4f7f2;
+  --sage-100:  #e4ede0;
+  --sage-200:  #c6d9be;
+  --sage-400:  #8aab7c;
+
+  --cream-50:  #fdfaf5;
+  --cream-100: #f9f2e4;
+  --cream-200: #f0e4c8;
+
+  --amber-400: #f59e0b;
+  --amber-500: #d97706;
+
+  --text-dark:  #1a2e1a;
+  --text-mid:   #3d5c3d;
+  --text-muted: #7a9475;
+  --text-light: #afc4a8;
+
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+  --radius-pill: 999px;
+
+  --shadow-xs:  0 1px 4px rgba(34,197,94,0.06);
+  --shadow-sm:  0 4px 16px rgba(34,197,94,0.09);
+  --shadow-md:  0 8px 28px rgba(34,197,94,0.13);
+  --shadow-lg:  0 16px 48px rgba(34,197,94,0.18);
+
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:    cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* ======================================================
+   GLOBAL PAGE — ORGANIC BACKGROUND
+====================================================== */
+
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(166,230,193,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 100%, rgba(196,217,190,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(240,250,244,0.4) 0%, transparent 70%),
+    #f4f7f2;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Decorative floating SVG leaves */
+.page::before,
+.page::after {
+  content: '';
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+.page::before {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #4cbb7e, transparent);
+  top: -120px;
+  right: -80px;
+  animation: floatOrb 14s ease-in-out infinite;
+}
+
+.page::after {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #22c55e, transparent);
+  bottom: 60px;
+  left: -60px;
+  animation: floatOrb 18s ease-in-out infinite reverse;
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-28px) scale(1.06); }
+}
+
+/* ======================================================
+   CONTAINER
+====================================================== */
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 24px 80px 24px;
+}
+
+/* ======================================================
+   PAGE HERO — TITLE
+====================================================== */
+
+.container > h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 10px 0;
+  padding-top: 48px;
+
+  background: linear-gradient(135deg, var(--text-dark) 0%, var(--green-700) 60%, var(--green-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  animation: fadeSlideDown 0.6s var(--ease-out) both;
+}
+
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin: 0 0 36px 0;
+  letter-spacing: 0.01em;
+  animation: fadeSlideDown 0.7s var(--ease-out) 0.1s both;
+}
+
+/* ======================================================
+   SECTION CARDS — GLASSMORPHISM ORGANIC
+====================================================== */
+
+.card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.85);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.9);
+  transition: box-shadow 0.3s var(--ease-smooth), transform 0.3s var(--ease-smooth);
+  animation: cardReveal 0.5s var(--ease-out) both;
+}
+
+.card:nth-child(3)  { animation-delay: 0.15s; }
+.card:nth-child(4)  { animation-delay: 0.22s; }
+.card:nth-child(5)  { animation-delay: 0.29s; }
+.card:nth-child(6)  { animation-delay: 0.36s; }
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255,255,255,0.9);
+  transform: translateY(-2px);
+}
+
+.card > h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 20px 0;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card > h3::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green-500);
+  flex-shrink: 0;
+}
+
+/* ======================================================
+   MOOD GRID
+====================================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.moodCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 10px 16px;
+  background: var(--sage-50);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition:
+    background 0.22s var(--ease-smooth),
+    border-color 0.22s var(--ease-smooth),
+    transform 0.22s var(--ease-spring),
+    box-shadow 0.22s var(--ease-smooth);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.moodCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(76,187,126,0.08), rgba(34,197,94,0.04));
+  opacity: 0;
+  transition: opacity 0.22s;
+  border-radius: inherit;
+}
+
+.moodCard:hover {
+  background: var(--green-50);
+  border-color: var(--green-200);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: var(--shadow-sm);
+}
+
+.moodCard:hover::before { opacity: 1; }
+
+.moodCard:active { transform: scale(0.97); }
+
+.moodCard.selected {
+  background: linear-gradient(145deg, var(--green-50), #e8f9ee);
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(76,187,126,0.18), var(--shadow-sm);
+}
+
+.moodCard.selected::before { opacity: 1; }
+
+.moodCard.selected::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: var(--green-500);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(34,197,94,0.25);
+  animation: popIn 0.3s var(--ease-spring);
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.emoji {
+  font-size: 32px;
+  line-height: 1;
+  transition: transform 0.22s var(--ease-spring);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+}
+
+.moodCard:hover .emoji,
+.moodCard.selected .emoji {
+  transform: scale(1.12) rotate(-4deg);
+}
+
+.moodCard p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-mid);
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.moodCard.selected p {
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+/* ======================================================
+   CRAVING CHIPS
+====================================================== */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  background: var(--sage-50);
+  border: 1.5px solid var(--sage-100);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-mid);
+  transition:
+    background 0.2s var(--ease-smooth),
+    border-color 0.2s var(--ease-smooth),
+    transform 0.2s var(--ease-spring),
+    box-shadow 0.2s var(--ease-smooth),
+    color 0.2s;
+  user-select: none;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.chip:hover {
+  background: var(--green-50);
+  border-color: var(--green-200);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xs);
+  color: var(--green-700);
+}
+
+.chip:active { transform: scale(0.96); }
+
+.chip.active {
+  background: linear-gradient(135deg, var(--green-500), var(--green-600));
+  border-color: var(--green-600);
+  color: white;
+  box-shadow: 0 4px 14px rgba(34,197,94,0.35);
+  transform: translateY(-1px);
+}
+
+.chip.active:hover {
+  background: linear-gradient(135deg, var(--green-600), var(--green-700));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34,197,94,0.4);
+}
+
+/* ======================================================
+   HUNGER SLIDER
+====================================================== */
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    to right,
+    var(--green-500) 0%,
+    var(--green-500) calc(var(--slider-pct, 40%) + 0%),
+    var(--sage-100) calc(var(--slider-pct, 40%) + 0%),
+    var(--sage-100) 100%
+  );
+  outline: none;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: height 0.2s;
+}
+
+.slider:hover { height: 8px; }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  border: 2.5px solid var(--green-500);
+  box-shadow: 0 2px 10px rgba(34,197,94,0.3);
+  cursor: grab;
+  transition: transform 0.18s var(--ease-spring), box-shadow 0.18s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 18px rgba(34,197,94,0.45);
+}
+
+.slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  border: 2.5px solid var(--green-500);
+  box-shadow: 0 2px 10px rgba(34,197,94,0.3);
+  cursor: grab;
+}
+
+/* ======================================================
+   CHECKBOX
+====================================================== */
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-mid);
+  user-select: none;
+  letter-spacing: 0.01em;
+  padding: 4px 0;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--sage-200);
+  border-radius: 6px;
+  background: white;
+  transition:
+    background 0.2s var(--ease-smooth),
+    border-color 0.2s var(--ease-smooth),
+    box-shadow 0.2s;
+  position: relative;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 9px;
+  border: 2.5px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) scale(0) translateY(-1px);
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.checkboxContainer:hover .checkmark {
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(76,187,126,0.12);
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+  background: linear-gradient(135deg, var(--green-500), var(--green-600));
+  border-color: var(--green-600);
+  box-shadow: 0 2px 10px rgba(34,197,94,0.3);
+}
+
+.checkboxContainer input:checked ~ .checkmark::after {
+  transform: rotate(45deg) scale(1) translateY(-1px);
+}
+
+/* ======================================================
+   PRIMARY CTA BUTTON
+====================================================== */
+
+.button {
+  width: 100%;
+  padding: 17px 32px;
+  background: linear-gradient(135deg, var(--green-500) 0%, var(--green-600) 60%, var(--green-700) 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition:
+    transform 0.22s var(--ease-spring),
+    box-shadow 0.22s var(--ease-smooth),
+    filter 0.22s;
+  box-shadow: 0 6px 24px rgba(34,197,94,0.38), 0 2px 8px rgba(34,197,94,0.2);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(34,197,94,0.45), 0 4px 12px rgba(34,197,94,0.25);
+  filter: brightness(1.04);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 4px 16px rgba(34,197,94,0.3);
+}
+
+.button:active::after {
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 6px 24px rgba(34,197,94,0.38); }
+  50%       { box-shadow: 0 6px 32px rgba(34,197,94,0.55); }
+}
+
+/* ======================================================
+   REFRESH BUTTON
+====================================================== */
+
+.refreshBtn {
+  width: 100%;
+  padding: 13px 24px;
+  background: rgba(255,255,255,0.8);
+  color: var(--green-700);
+  border: 1.5px solid var(--green-200);
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s var(--ease-spring),
+    box-shadow 0.2s;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
+  letter-spacing: 0.02em;
+}
+
+.refreshBtn:hover {
+  background: var(--green-50);
+  border-color: var(--green-400);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.refreshBtn:active { transform: scale(0.98); }
+
+/* ======================================================
+   RESULT CARD — ELEVATED REVEAL
+====================================================== */
+
+.resultCard {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(76,187,126,0.2);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.95);
+  animation: resultReveal 0.55s var(--ease-spring) both;
+  position: relative;
+  overflow: hidden;
+}
+
+.resultCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--green-400), var(--green-500), var(--green-400));
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+  border-radius: 0 0 4px 4px;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+@keyframes resultReveal {
+  from { opacity: 0; transform: translateY(32px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.resultCard h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.reason {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0 0 26px 0;
+  padding: 12px 16px;
+  background: var(--sage-50);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--green-400);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+
+/* ======================================================
+   RESULT GRID — SUGGESTION CARDS
+====================================================== */
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.resultBox {
+  background: linear-gradient(145deg, var(--green-50), rgba(240,250,244,0.7));
+  border: 1.5px solid var(--green-100);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition:
+    transform 0.22s var(--ease-spring),
+    box-shadow 0.22s var(--ease-smooth),
+    border-color 0.22s;
+  animation: cardReveal 0.4s var(--ease-out) both;
+  position: relative;
+  overflow: hidden;
+}
+
+.resultBox::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green-400), transparent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.resultBox:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-200);
+}
+
+.resultBox:hover::before { opacity: 1; }
+
+.resultBox h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+.resultBox p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* ======================================================
+   LOG BUTTON
+====================================================== */
+
+.logBtn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, var(--green-500), var(--green-600));
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s var(--ease-spring),
+    box-shadow 0.2s,
+    background 0.2s;
+  letter-spacing: 0.03em;
+  align-self: flex-start;
+}
+
+.logBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(34,197,94,0.4);
+}
+
+.logBtn:active { transform: scale(0.95); }
+
+.logged {
+  background: var(--sage-100) !important;
+  color: var(--text-muted) !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ======================================================
+   CALORIES FOOTER
+====================================================== */
+
+.calories {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-700);
+  margin: 0;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--green-50), var(--cream-50));
+  border: 1px solid var(--green-100);
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.02em;
+  animation: fadeSlideDown 0.4s var(--ease-out) 0.2s both;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 560px) {
+  .container {
+    padding: 0 16px 60px 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resultGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 20px 18px;
+  }
+
+  .resultCard {
+    padding: 24px 18px;
+  }
+}
+
+/* ======================================================
+   ACCESSIBILITY
+====================================================== */
+
+:focus-visible {
+  outline: 3px solid var(--green-400);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

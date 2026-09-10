@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --green-deep:    #15803d;
+  --green-mid:     #16a34a;
+  --green-bright:  #22c55e;
+  --green-light:   #4ade80;
+  --green-pale:    #d1fae5;
+  --green-ghost:   #f0fdf4;
+  --teal:          #0d9488;
+  --teal-light:    #ccfbf1;
+  --orange:        #f97316;
+  --orange-pale:   #fff7ed;
+  --gold:          #fbbf24;
+  --gold-pale:     #fffbeb;
+  --white:         #ffffff;
+  --slate-50:      #f8fafc;
+  --slate-100:     #f1f5f9;
+  --slate-300:     #cbd5e1;
+  --slate-500:     #64748b;
+  --slate-800:     #1e293b;
+  --shadow-card:   0 8px 40px rgba(22,163,74,0.13);
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  position: fixed;
+  top: -120px; right: -80px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(34,197,94,0.12) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+  animation: floatOrb 8s ease-in-out infinite;
+}
+.wrapper::after {
+  content: '';
+  position: fixed;
+  bottom: -100px; left: -60px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(251,191,36,0.08) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+  animation: floatOrb 12s ease-in-out infinite reverse;
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0,0); }
+  50%       { transform: translate(15px,-15px); }
+}
+
+/* ─── HEADER ─── */
+.header {
+  text-align: center;
+  margin-bottom: 44px;
+  position: relative; z-index: 1;
+  animation: slideDown 0.6s cubic-bezier(.22,.68,0,1.2) both;
+}
+@keyframes slideDown {
+  from { opacity:0; transform: translateY(-24px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; font-weight: 700; color: var(--slate-800); margin: 0 0 10px;
+}
+.header h1 span {
+  background: linear-gradient(135deg, var(--green-mid), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.header p { color: var(--slate-500); font-size: 15px; }
+
+.progressWrap { margin-top: 28px; }
+.progressLabels {
+  display: flex; justify-content: space-between; margin-bottom: 8px;
+}
+.progressLabels span {
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--slate-300);
+}
+.progressLabels span.pActive { color: var(--green-mid); }
+.progress { display: flex; gap: 8px; }
+.progress div {
+  height: 5px; flex: 1; background: var(--slate-100);
+  border-radius: 99px; overflow: hidden; position: relative;
+}
+.progress div::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, var(--green-mid), var(--gold));
+  border-radius: 99px; transform: scaleX(0); transform-origin: left;
+  transition: transform 0.6s cubic-bezier(.22,.68,0,1.2);
+}
+.active::after { transform: scaleX(1) !important; }
+
+/* ─── STEP TITLE ─── */
+.stepTitle {
+  margin-bottom: 22px; position: relative; z-index: 1;
+  animation: fadeUp 0.5s 0.2s both;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(16px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.stepBadge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(135deg, var(--gold-pale), #fff);
+  border: 1px solid rgba(251,191,36,0.25); border-radius: 20px;
+  padding: 5px 14px; font-size: 12px; font-weight: 600;
+  color: #92400e; margin-bottom: 8px;
+}
+.stepBadge::before {
+  content: ''; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--gold); display: block;
+}
+.stepTitle h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700; color: var(--slate-800); margin: 0;
+}
+
+/* ─── CARD ─── */
+.card {
+  background: var(--white);
+  padding: 36px; border-radius: 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(22,163,74,0.08);
+  position: relative; z-index: 1; overflow: hidden;
+  animation: fadeUp 0.6s 0.3s both;
+}
+.card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--green-mid), var(--gold), var(--orange));
+  border-radius: 24px 24px 0 0;
+}
+
+.card h3 {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--green-mid);
+  margin: 32px 0 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.card h3:first-of-type { margin-top: 0; }
+.card h3::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(22,163,74,0.15), transparent);
+}
+
+/* ─── BUDGET GRID ─── */
+.budgetGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.budgetCard {
+  padding: 22px 16px;
+  border-radius: 18px;
+  border: 1.5px solid var(--slate-100);
+  background: var(--slate-50);
+  cursor: pointer; text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; font-weight: 500;
+  color: var(--slate-500);
+  transition: all 0.2s ease;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 8px;
+}
+
+.budgetCard:hover {
+  border-color: var(--green-light);
+  background: var(--green-ghost);
+  color: var(--green-deep);
+}
+
+.icon {
+  font-size: 28px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.budgetCard:hover .icon { transform: scale(1.15); }
+
+.activeCard {
+  background: linear-gradient(135deg, var(--green-ghost), #fff) !important;
+  border-color: var(--green-mid) !important;
+  color: var(--green-deep) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 20px rgba(22,163,74,0.15) !important;
+}
+
+.activeCard .icon { transform: scale(1.15); }
+
+/* ─── ACTIVITY LIST ─── */
+.activityList {
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.activityCard {
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1.5px solid var(--slate-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: var(--slate-50);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.activityCard::before {
+  content: '';
+  position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: transparent; transition: background 0.2s ease;
+}
+
+.activityCard:hover {
+  border-color: var(--green-light);
+  background: var(--green-ghost);
+  transform: translateX(3px);
+}
+
+.activityCard:hover::before { background: var(--green-light); }
+
+.activeActivity {
+  background: linear-gradient(135deg, var(--green-ghost), #fff) !important;
+  border-color: var(--green-mid) !important;
+  box-shadow: 0 4px 18px rgba(22,163,74,0.13) !important;
+  transform: translateX(3px) !important;
+}
+
+.activeActivity::before {
+  background: linear-gradient(180deg, var(--green-mid), var(--green-bright)) !important;
+}
+
+.activityCard strong {
+  font-size: 15px; font-weight: 700; color: var(--slate-800);
+  display: block; margin-bottom: 2px;
+}
+
+.activityCard p {
+  margin: 0; color: var(--slate-500); font-size: 13px;
+}
+
+.check {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--green-mid), var(--green-bright));
+  color: white; font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 12px rgba(22,163,74,0.35);
+  animation: popIn 0.3s cubic-bezier(.22,.68,0,1.5) both;
+}
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ─── MEALS ─── */
+.meals {
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+
+.mealBtn {
+  width: 64px; height: 64px; border-radius: 16px;
+  border: 1.5px solid var(--slate-100);
+  background: var(--slate-50);
+  font-size: 20px; font-family: 'DM Sans', sans-serif;
+  font-weight: 700; color: var(--slate-500);
+  cursor: pointer; transition: all 0.2s ease;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.mealBtn:hover {
+  border-color: var(--green-light);
+  background: var(--green-ghost);
+  color: var(--green-deep);
+}
+
+.activeMeal {
+  background: linear-gradient(135deg, var(--green-ghost), #fff) !important;
+  border-color: var(--green-mid) !important;
+  color: var(--green-deep) !important;
+  box-shadow: 0 4px 16px rgba(22,163,74,0.18) !important;
+}
+
+/* ─── ERROR ─── */
+.error {
+  color: var(--orange); font-size: 12px; font-weight: 500;
+  margin-top: 8px; display: flex; align-items: center; gap: 4px;
+}
+
+/* ─── COMPLETE BANNER ─── */
+.completeBanner {
+  background: linear-gradient(135deg, var(--green-ghost), var(--teal-light));
+  border: 1px solid rgba(22,163,74,0.15);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.completeBanner .bannerIcon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(135deg, var(--green-mid), var(--teal));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; flex-shrink: 0;
+}
+
+.completeBanner p {
+  margin: 0; font-size: 13px; color: var(--slate-500); line-height: 1.5;
+}
+
+.completeBanner strong {
+  display: block; font-size: 14px; color: var(--green-deep); margin-bottom: 2px;
+}
+
+/* ─── ACTIONS ─── */
+.actions {
+  display: flex; justify-content: space-between; margin-top: 32px;
+  position: relative; z-index: 1;
+  animation: fadeUp 0.5s 0.5s both;
+}
+
+.backBtn {
+  padding: 15px 28px; border-radius: 14px;
+  background: var(--white); border: 1.5px solid var(--slate-100);
+  font-weight: 600; font-family: 'DM Sans', sans-serif;
+  font-size: 15px; color: var(--slate-500);
+  cursor: pointer; transition: all 0.2s ease;
+}
+.backBtn:hover { border-color: var(--slate-300); color: var(--slate-800); }
+
+.completeBtn {
+  padding: 15px 36px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--green-deep), var(--green-mid), var(--green-bright));
+  color: white; border: none;
+  font-weight: 700; font-family: 'DM Sans', sans-serif; font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 6px 30px rgba(22,163,74,0.40);
+  transition: all 0.2s ease; position: relative; overflow: hidden;
+}
+.completeBtn::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), transparent);
+}
+.completeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(22,163,74,0.50);
+}
+.completeBtn:disabled {
+  opacity: 0.7; cursor: not-allowed; transform: none;
+}

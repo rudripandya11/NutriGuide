@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap');
+
+/* PAGE */
+.page {
+  background: #f0fdf4;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding: 110px 20px 100px;
+  text-align: center;
+  background: linear-gradient(160deg, #f0fdf4 0%, #ecfdf5 50%, #ccfbf1 100%);
+  overflow: hidden;
+}
+
+.heroOrb1 {
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  opacity: 0.2;
+  animation: orbFloat 9s ease-in-out infinite;
+}
+
+.heroOrb2 {
+  position: absolute;
+  bottom: -80px;
+  left: -60px;
+  width: 360px;
+  height: 360px;
+  opacity: 0.18;
+  animation: orbFloat 11s ease-in-out infinite reverse;
+}
+
+.heroSvg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  width: 100%; height: 100%;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #0d9488, #16a34a);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(13,148,136,0.35);
+  animation: fadeUp 0.6s ease both;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 14px;
+  animation: fadeUp 0.7s ease both;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: #0d9488;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #374151;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.7;
+  animation: fadeUp 0.8s ease both;
+}
+
+.heroWave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+}
+
+/* GRID */
+.grid {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: 0 16px 50px rgba(22,163,74,0.1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1.5px solid #dcfce7;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #22c55e, #0d9488);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 70px rgba(22,163,74,0.18);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+/* ICON */
+.iconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #dcfce7, #ccfbf1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(13,148,136,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .iconWrap {
+  transform: rotate(-8deg) scale(1.12);
+}
+
+/* TEXT */
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #14532d;
+  margin-bottom: 8px;
+}
+
+.card > p {
+  color: #4b5563;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+.benefitsLabel {
+  margin-top: 20px;
+  color: #0d9488;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22c55e, #0d9488);
+  flex-shrink: 0;
+}
+
+/* ROUTINE SECTION */
+.plateSection {
+  padding: 90px 20px;
+  background: linear-gradient(160deg, #ecfdf5, #f0fdf4, #ccfbf1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.plateSectionBg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  opacity: 0.10;
+}
+
+.plateSection h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #14532d;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.plateSection > p {
+  color: #4b5563;
+  font-size: 16px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.plateGrid {
+  max-width: 960px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  position: relative;
+}
+
+.plateCard {
+  background: white;
+  padding: 36px 24px;
+  border-radius: 26px;
+  box-shadow: 0 16px 40px rgba(22,163,74,0.1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1.5px solid #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plateCard:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 24px 60px rgba(22,163,74,0.2);
+}
+
+.plateRing {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.plateCard span {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  color: #16a34a;
+  margin-bottom: 6px;
+}
+
+.plateCard p {
+  font-size: 15px;
+  color: #1f2937;
+  font-weight: 800;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(8deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 36px; }
+}
